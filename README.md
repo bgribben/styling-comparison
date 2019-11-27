@@ -7,7 +7,7 @@ Fresh app with an unstyled button
 
 **fela-step-1**
 
-Style the button using our current pattern of a container
+Style the button with fela using our current pattern of a container
 
 
 **fela-step-2**
