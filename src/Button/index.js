@@ -1,6 +1,20 @@
-import { connect as felaConnect } from 'react-fela';
-import component from './component';
+import React, { useState } from 'react';
 
-import * as styles from './styles';
+import { StyledButton, StyledIndicator } from './styled';
 
-export default felaConnect(styles)(component);
+// Using styled-components to write the exact same 
+// functionality is a much cleaner experience.
+export default () => {
+  // State gets to live where it should
+  const [clicked, setClicked] = useState();
+
+  const allowIndicators = true;
+  return (
+    // And component props are available in the styling
+    // declarations without any 'connect' containers
+    <StyledButton clicked={clicked} onClick={() => setClicked(!clicked)}>
+      I'm a button
+      <StyledIndicator enabled={allowIndicators && clicked} />
+    </StyledButton>
+  )
+};
