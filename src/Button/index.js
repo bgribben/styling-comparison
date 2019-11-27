@@ -1,5 +1,6 @@
-import React from 'react';
+import { connect as felaConnect } from 'react-fela';
+import component from './component';
 
-export default () => (
-  <button>I'm a button</button>
-);
+import * as styles from './styles';
+
+export default felaConnect(styles)(component);
