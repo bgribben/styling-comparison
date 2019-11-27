@@ -27,5 +27,5 @@ Rewrite step 3 using styled-components
 
 **fela-step-5**
 
-Rewrite step 3 using alterntive fela methods
+Rewrite step 3 using alternative fela methods
 
